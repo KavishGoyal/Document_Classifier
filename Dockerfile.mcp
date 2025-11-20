@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+RUN pip install --no-cache-dir fastapi uvicorn loguru httpx pydantic
+
+# Copy MCP server code
+COPY mcp /appmcp
+COPY config /appconfig
+
+# Create necessary directories
+# RUN mkdir -p /app/output /app/input_pdfs
+
+ENV PYTHONPATH=/app
+
+# Expose port
+EXPOSE 8001
+
+# Run MCP server
+CMD ["python", "mcp/server.py"]

@@ -1,0 +1,45 @@
+# Core Dependencies
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# AI & LLM
+langchain
+langchain-groq
+langgraph
+langchain-community
+langchain-core
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# PDF Processing
+PyPDF2
+pdf2image
+pytesseract
+Pillow
+
+# MCP & Tools
+mcp
+httpx
+
+# Frontend
+streamlit
+streamlit-option-menu
+
+# Utilities
+python-multipart
+python-dotenv
+redis
+celery
+
+# Monitoring & Logging
+loguru
+prometheus-client
+
+# Testing
+pytest
+pytest-asyncio

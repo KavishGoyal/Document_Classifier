@@ -1,0 +1,8 @@
+.venv
+.env
+/.env
+/.venv
+/input_pdfs
+/output
+/logs
+/data
